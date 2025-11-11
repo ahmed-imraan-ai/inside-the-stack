@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Containers & VMs</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">Tools: Containers & VMs</h1>
+                    <p class="page-subtitle">
+                        The biggest challenge in deployment is ensuring "it
+                        works on my machine" translates to "it works
+                        everywhere." Virtualization tools solve this problem.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">Virtual Machines (VMs)</h2>
+                        <p>
+                            A <b>Virtual Machine</b> (VM) is an emulation of a
+                            complete computer system. A single physical server
+                            can host multiple VMs, each running its own copy of
+                            an operating system (OS), dedicated memory, and
+                            hardware resources.
+                        </p>
+
+                        <h3 class="sub-heading">The VM Advantage</h3>
+                        <p>
+                            VMs are great for running different OSs on one
+                            machine (e.g., Windows and Linux side-by-side) or
+                            for running older, specialized software. They
+                            provide <b>total isolation</b>, acting like
+                            completely separate computers.
+                        </p>
+
+                        <h3 class="sub-heading">The VM Overhead</h3>
+                        <p>
+                            Because each VM includes a full copy of the OS and a
+                            virtual hardware layer, they consume significant
+                            disk space, memory, and startup time. This led to
+                            the rise of a more lightweight technology:
+                            containers.
+                        </p>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">
+                            Containerization (Docker)
+                        </h2>
+                        <p>
+                            <b>Containers</b>, popularized by <b>Docker</b>,
+                            package an application and all its dependencies
+                            (libraries, code, configurations) into a single,
+                            light-weight, executable unit. Unlike VMs,
+                            containers share the host machine's OS kernel,
+                            making them much more efficient.
+                        </p>
+
+                        <h3 class="sub-heading">The Docker Advantage</h3>
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Lightweight and Fast:</b> Containers start in
+                                seconds and require far less overhead than a VM.
+                            </li>
+                            <li>
+                                <b>Consistency:</b> The application runs the
+                                exact same way on a developer's laptop as it
+                                does in production, eliminating dependency
+                                conflicts.
+                            </li>
+                            <li>
+                                <b>Scalability:</b> It's easy to quickly spin up
+                                dozens or hundreds of copies of a container to
+                                handle high traffic.
+                            </li>
+                        </ul>
+
+                        <p>
+                            Containers are now the dominant standard for
+                            packaging and deploying modern Backend and
+                            microservice applications.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        You've built and deployed the application. The final
+                        step: keeping it secure!
+                    </p>
+                    <a href="/security.html" class="button button-primary"
+                        >Start the Security Module →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'devops';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

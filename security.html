@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Security</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">
+                        Security Overview: Defending the Stack
+                    </h1>
+                    <p class="page-subtitle">
+                        Security is not optional; it's integral. Learn the
+                        foundational concepts and protocols used to protect
+                        data, applications, and users from malicious threats.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Secure Communication: HTTPS
+                        </h2>
+                        <p>
+                            <b>HTTPS</b> (Hypertext Transfer Protocol Secure) is
+                            the standard protocol for secure communication over
+                            the network. It is simply the regular HTTP protocol
+                            layered on top of <b>TLS</b> (Transport Layer
+                            Security).
+                        </p>
+
+                        <h3 class="sub-heading">Encryption (TLS/SSL)</h3>
+                        <p>
+                            TLS (often still referred to as SSL) ensures that
+                            all data transferred between the client and the
+                            server is <b>encrypted</b>. This means that if a
+                            third party intercepts the data (e.g., a password or
+                            credit card number), they see only scrambled,
+                            meaningless text instead of the original data.
+                        </p>
+
+                        <h2 class="section-heading">
+                            Authentication vs. Authorization
+                        </h2>
+                        <p class="text-center">
+                            These two terms are fundamental to user security:
+                        </p>
+                        <ul class="standard-list">
+                            <li>
+                                <b>Authentication:</b>
+                                <b>Verifies identity</b> (e.g., checking a
+                                username and password to confirm <b>who</b> you
+                                are).
+                            </li>
+                            <li>
+                                <b>Authorization:</b>
+                                <b>Verifies permissions</b> (e.g., checking if a
+                                user <b>is allowed</b> to access an admin page
+                                or delete a file).
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">
+                            Network Defense: Firewalls
+                        </h2>
+                        <p>
+                            A <b>firewall</b> is a network security system that
+                            monitors and controls incoming and outgoing network
+                            traffic based on predetermined security rules. It
+                            acts as a primary barrier between a trusted internal
+                            network (your servers) and untrusted external
+                            networks (the internet).
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Packet Filtering:</b> The most common type;
+                                checks the source, destination, and port number
+                                of data packets.
+                            </li>
+                            <li>
+                                <b>Application-Layer:</b> Can inspect the
+                                contents of the data itself (like the HTTP
+                                traffic) to block malicious code.
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">SSL Certificate</h2>
+                        <p>
+                            For HTTPS to work, the server must have an
+                            <b>SSL Certificate</b>. This digital certificate
+                            confirms the server's identity, allowing the
+                            client's browser to trust the connection and
+                            establish a secure, encrypted link.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        Understanding the basics is key. Now, let's explore
+                        common threats and how developers mitigate them.
+                    </p>
+                    <a
+                        href="/security/threats.html"
+                        class="button button-primary"
+                        >Continue to Threats & Best Practices →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'security';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - DevOps</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">DevOps & Hosting: Go Live!</h1>
+                    <p class="page-subtitle">
+                        DevOps is the culture and practice that bridges
+                        development and operations, ensuring code is built,
+                        tested, and deployed to users quickly and reliably.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-intro-section">
+                <div class="container">
+                    <h2 class="section-heading">The Path to Production</h2>
+                    <p>
+                        Every web application must transition from a local
+                        development environment (your computer) to a
+                        <b>production environment</b> (public servers). DevOps
+                        is the set of tools and practices that automate this
+                        journey.
+                    </p>
+
+                    <h3 class="sub-heading">Deployment and Hosting</h3>
+                    <p>
+                        Deployment is the process of getting all your Frontend
+                        and Backend code onto a <b>Web Host</b>. The host is the
+                        physical or virtual space that makes your application
+                        accessible via the internet.
+                    </p>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Types of Hosting</h2>
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Shared Hosting:</b> Cheapest option;
+                                resources (CPU, RAM) are shared among many
+                                websites. Best for small, low-traffic sites.
+                            </li>
+                            <li>
+                                <b>Virtual Private Server (VPS):</b> A virtual
+                                machine dedicated solely to your application,
+                                offering much more control and predictable
+                                performance.
+                            </li>
+                            <li>
+                                <b
+                                    >Cloud Hosting (e.g., AWS, Azure, Google
+                                    Cloud):</b
+                                >
+                                Highly scalable, pay-as-you-go services. This is
+                                the industry standard for modern, large-scale
+                                applications.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="topic-navigation-section">
+                <div class="container">
+                    <h2 class="section-heading">Beyond Basic Deployment</h2>
+
+                    <div class="frontend-nav-grid two-columns">
+                        <article class="topic-card alt-card">
+                            <h3 class="card-title">1. CI/CD & Automation</h3>
+                            <p class="card-content">
+                                The core of modern DevOps. Learn how Continuous
+                                Integration and Continuous Delivery automate
+                                testing, building, and deployment pipelines.
+                            </p>
+                            <a href="/devops/ci-cd.html" class="card-link"
+                                >Explore Automation →</a
+                            >
+                        </article>
+
+                        <article class="topic-card alt-card">
+                            <h3 class="card-title">
+                                2. Tools: Containers & VMs
+                            </h3>
+                            <p class="card-content">
+                                Discover the power of **containerization**
+                                (Docker) and how virtual machines (VMs) ensure
+                                your application runs identically everywhere.
+                            </p>
+                            <a href="/devops/containers.html" class="card-link"
+                                >Master Virtualization →</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'devops';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

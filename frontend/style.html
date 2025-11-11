@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - CSS & Style</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">CSS & Style: The Aesthetics</h1>
+                    <p class="page-subtitle">
+                        CSS brings structure to life. Learn how to control
+                        colors, typography, and create layouts that look
+                        beautiful on any device.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Cascading Style Sheets (CSS)
+                        </h2>
+                        <p>
+                            CSS dictates how HTML elements are presented—it is
+                            the language of design. The <b>Cascading</b> nature
+                            refers to how styles inherit properties from their
+                            parent elements and how the order of rules
+                            determines which style wins.
+                        </p>
+
+                        <h2 class="section-heading">Design Fundamentals</h2>
+                        <p>
+                            Effective styling relies on more than just colors.
+                            Using a system ensures consistency, which is why we
+                            defined our colors and spacing using
+                            <b>CSS Custom Properties</b> (variables) in the
+                            `:root` selector.
+                        </p>
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">Defining Variables</h3>
+                            <pre><code>:root {
+  --color-primary: oklch(20.768% 0.03985 265.767);
+  --color-secondary: oklch(75.353% 0.13906 232.691);
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+}</code></pre>
+                        </div>
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">Using CSS Variables</h3>
+                            <pre><code>.button-primary {
+  background-color: var(--color-secondary);
+  color: white;
+  padding: var(--space-md) var(--space-lg);
+}</code></pre>
+                            <p>
+                                This allows us to change the
+                                <b>look and feel</b>
+                                of the entire site instantly by updating a few
+                                variable value.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Layout Powerhouses</h2>
+                        <p>
+                            For decades, creating complex layouts was difficult.
+                            Now, we rely on two core CSS features for modern
+                            responsiveness and organization:
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Flexbox:</b> Perfect for arranging items in a
+                                single row or column (one-dimensional layout),
+                                such as navigation bars and footers.
+                            </li>
+                            <li>
+                                <b>CSS Grid:</b> Ideal for arranging items in
+                                complex rows and columns (two-dimensional
+                                layout), such as entire page templates and
+                                article grids. (We used this for our summary
+                                cards!)
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">
+                            Achieving Responsiveness
+                        </h2>
+                        <p>
+                            A website must look great on a phone, tablet, and
+                            desktop. This is achieved using
+                            <b>Media Queries</b>, which apply specific styles
+                            based on the user's screen size or device
+                            characteristics.
+                        </p>
+                        <div class="code-example-block">
+                            <pre><code>@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        Our site is structured and styled. It's time to make it
+                        move!
+                    </p>
+                    <a
+                        href="/frontend/behavior.html"
+                        class="button button-primary"
+                        >Proceed to JavaScript & Behavior →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'frontend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

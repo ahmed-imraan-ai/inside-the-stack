@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - HTML & Structure</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">HTML & Structure: The Skeleton</h1>
+                    <p class="page-subtitle">
+                        HTML is the foundation of every web page. It provides
+                        the meaning and structure that the browser needs to
+                        organize content.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">What is HTML?</h2>
+                        <p>
+                            <strong>HTML</strong> (HyperText Markup Language) is
+                            not a programming language; it's a
+                            <b>markup language</b>. It uses tags to label
+                            content (like "heading," "paragraph," "link") so the
+                            browser knows how to display it and what role it
+                            plays.
+                        </p>
+                        <p>
+                            Every piece of text, every image, and every link on
+                            the web exists inside an HTML tag. This tagged
+                            structure is then translated by the browser into the
+                            <b>Document Object Model (DOM)</b>.
+                        </p>
+
+                        <h2 class="section-heading">
+                            The Document Object Model (DOM)
+                        </h2>
+                        <p>
+                            The <b>DOM</b> is the browser's internal, tree-like
+                            representation of your HTML document. When
+                            JavaScript interacts with a webpage—say, hiding a
+                            menu or changing text—it's actually interacting with
+                            the DOM.
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">
+                                Example: Simple HTML vs. the DOM
+                            </h3>
+                            <pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt;...&lt;/nav&gt;
+  &lt;/header&gt;
+&lt;/body&gt;</code></pre>
+                            <p>
+                                The browser reads this, creates nodes for
+                                `body`, `header`, and `nav`, and connects them
+                                in a hierarchy that code can easily traverse.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Why Semantics Matter</h2>
+                        <p>
+                            Modern web development uses
+                            <b>Semantic HTML</b> (HTML5 tags like
+                            `&lt;article&gt;` and `&lt;aside&gt;`) to give
+                            meaning to content, not just styling.
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>&lt;header&gt; / &lt;footer&gt;:</b> Defines
+                                introductory or closing content for a section or
+                                document.
+                            </li>
+                            <li>
+                                <b>&lt;nav&gt;:</b> Defines a set of navigation
+                                links.
+                            </li>
+                            <li>
+                                <b>&lt;main&gt;:</b> Contains the dominant
+                                content unique to the document.
+                            </li>
+                            <li>
+                                <b>&lt;article&gt; / &lt;section&gt;:</b>
+                                Organizes independent, self-contained content
+                                (article) or thematic groups (section).
+                            </li>
+                            <li>
+                                <b>Accessibility Benefit:</b> Screen readers and
+                                search engines rely heavily on these tags to
+                                understand the structure of the page.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        Structure is only half the battle. Ready to make your
+                        skeleton look good?
+                    </p>
+                    <a href="/frontend/style.html" class="button button-primary"
+                        >Continue to CSS & Style →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'frontend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

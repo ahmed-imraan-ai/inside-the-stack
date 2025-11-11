@@ -1,0 +1,21 @@
+:root {
+    /* --- Colours --- */
+    --color-primary: oklch(20.768% 0.03985 265.767);
+    --color-secondary: oklch(75.353% 0.13906 232.691);
+    --color-accent: oklch(72.276% 0.19199 149.6);
+    --color-background: oklch(98.415% 0.00352 248.585);
+    --color-text-main: oklch(27.95% 0.03688 260.049);
+    --color-text-secondary: oklch(92.876% 0.01272 255.643);
+    --color-layer-yellow: oklch(88.03% 0.1347 86.064);
+
+    /* --- Fonts --- */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* --- Spacing --- */
+    --space-xs: 0.5rem; /* 8px */
+    --space-sm: 1rem; /* 16px */
+    --space-md: 1.5rem; /* 24px */
+    --space-lg: 2.5rem; /* 40px */
+    --space-xl: 4rem; /* 64px */
+}

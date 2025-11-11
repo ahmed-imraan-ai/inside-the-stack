@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Threats & Best Practices</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">Threats & Best Practices</h1>
+                    <p class="page-subtitle">
+                        A secure application requires constant vigilance. Learn
+                        about the most common web vulnerabilities and the coding
+                        practices required to defend your application.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Common Web Vulnerabilities
+                        </h2>
+                        <p>
+                            Developers must be aware of how attackers exploit
+                            weaknesses in the application logic or code
+                            handling. Here are two of the most critical threats:
+                        </p>
+
+                        <h3 class="sub-heading text-center">
+                            SQL Injection (Backend Threat)
+                        </h3>
+                        <p>
+                            This attack occurs when an attacker inserts
+                            malicious <b>SQL code</b> into an input field (like
+                            a login form) designed to query the database. If the
+                            backend code doesn't properly sanitize the input,
+                            the attacker can execute unintended commands,
+                            potentially viewing, modifying, or deleting
+                            sensitive data.
+                        </p>
+
+                        <h3 class="sub-heading text-center">
+                            Cross-Site Scripting (XSS - Frontend Threat)
+                        </h3>
+                        <p>
+                            XSS allows an attacker to inject malicious
+                            <b>client-side scripts</b> (usually JavaScript) into
+                            a webpage viewed by other users. This exploit can
+                            steal user cookies (session data), capture form
+                            input, or redirect users to malicious sites.
+                        </p>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">
+                            Essential Security Best Practices
+                        </h2>
+                        <p>
+                            Mitigating these threats often relies on simple,
+                            consistent practices throughout the entire
+                            development stack:
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Input Validation:</b> Never trust user input.
+                                Always check that submitted data matches the
+                                expected type, length, and format.
+                            </li>
+                            <li>
+                                <b>Sanitization:</b> Remove potentially harmful
+                                characters (like script tags or SQL syntax) from
+                                any input before processing it.
+                            </li>
+                            <li>
+                                <b>Parameterized Queries:</b> The primary
+                                defense against SQL Injection. This separates
+                                the SQL command from the user data, ensuring the
+                                input is treated only as data, never as
+                                executable code.
+                            </li>
+                            <li>
+                                <b>Least Privilege:</b> Ensure that database
+                                connections and server processes only have the
+                                minimal permissions required to perform their
+                                specific tasks.
+                            </li>
+                            <li>
+                                <b>Keep Software Updated:</b> Regularly patch
+                                and update all operating systems, libraries, and
+                                frameworks to fix known security
+                                vulnerabilities.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        The core technical content is complete! Now, let's
+                        explore the essential tools and resources for web
+                        developers.
+                    </p>
+                    <a href="/tools.html" class="button button-primary"
+                        >Lets look at tools →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'security';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+.main-footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-secondary);
+    padding: var(--space-lg) 0 var(--space-md);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-lg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-brand .logo-container {
+    max-width: 200px;
+}
+.footer-logo-link {
+    color: var(--color-text-secondary);
+    justify-content: center;
+}
+
+.footer-tagline {
+    margin-top: var(--space-sm);
+    max-width: 250px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Footer Icon Links --- */
+.footer-links {
+    display: flex;
+    gap: var(--space-md);
+    /* Reverse the order on mobile to match the visual better, 
+       or keep it simple: flex-direction: row; */
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+}
+
+.footer-link:active,
+.footer-link:focus,
+.footer-link:hover {
+    color: var(--color-secondary); /* Highlight blue on hover */
+    text-decoration: none;
+}
+
+.footer-link .icon {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-xs);
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: var(--space-md);
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    z-index: 99;
+    background-color: var(--color-secondary);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--color-primary); /* Dark navy on hover */
+}
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Layout side-by-side on desktop */
+        text-align: left; /* Align text back to the left */
+        align-items: flex-start;
+    }
+
+    .footer-brand {
+        flex-basis: 30%; /* Give the brand section a fixed size */
+        text-align: left;
+    }
+
+    .footer-logo-link {
+        justify-content: flex-start; /* Align logo to the left on desktop */
+    }
+
+    .footer-links {
+        /* Pushes the link group to the far right */
+        margin-left: auto;
+        gap: var(--space-lg);
+        flex-basis: 40%;
+        justify-content: flex-end; /* Align links to the right */
+    }
+}

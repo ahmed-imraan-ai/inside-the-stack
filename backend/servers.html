@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Servers & Logic</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">
+                        Servers & Logic: The Power Behind the Code
+                    </h1>
+                    <p class="page-subtitle">
+                        The Server is the dedicated machine that hosts your
+                        application code and runs the essential business logic
+                        to fulfill client requests.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">What is a Web Server?</h2>
+                        <p>
+                            A <b>Web Server</b> is specialized software running
+                            on a dedicated machine (a physical or virtual
+                            computer). Its primary job is to listen for
+                            <b>HTTP requests</b> coming from clients (browsers)
+                            and return the appropriate
+                            <b>HTTP responses</b> (like HTML pages, images, or
+                            JSON data).
+                        </p>
+
+                        <h3 class="sub-heading">
+                            The Role of Server-Side Languages
+                        </h3>
+                        <p>
+                            Server-side languages run the <b>business logic</b>.
+                            This is the code that performs critical actions that
+                            the client cannot do, such as: securely validating
+                            user credentials, updating customer accounts,
+                            running complex calculations, and interacting with
+                            the database.
+                        </p>
+
+                        <p>
+                            Popular languages used for backend development
+                            include <b>Node.js</b> (JavaScript), <b>PHP</b>, and
+                            others like Ruby and Java.
+                        </p>
+
+                        <h2 class="section-heading">
+                            Example: The Request Process
+                        </h2>
+                        <p class="text-center">
+                            When you submit a contact form, here is the basic
+                            server workflow:
+                        </p>
+                        <ul class="standard-list">
+                            <li>
+                                The Client (browser) sends a
+                                <b>POST request</b> to the server.
+                            </li>
+                            <li>
+                                The Web Server receives the request and passes
+                                it to the <b>Backend Logic</b> (e.g., PHP
+                                script).
+                            </li>
+                            <li>
+                                The PHP script validates the data, stores it in
+                                the database, and possibly sends an email.
+                            </li>
+                            <li>
+                                The Backend returns a <b>Success Response</b>
+                                (e.g., a "Thank You" page or a JSON status code)
+                                to the client.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">PHP Example</h2>
+                        <p>
+                            <b>PHP</b> (Hypertext Preprocessor) is one of the
+                            oldest and most widely used server-side languages,
+                            powering massive applications like WordPress.
+                        </p>
+
+                        <p>
+                            PHP code is often embedded directly within HTML, and
+                            the server executes the PHP, replacing it with the
+                            resulting HTML before sending it to the client.
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">Simple PHP Logic</h3>
+                            <pre><code>&lt;?php
+  $user = "Guest";
+  // Logic to check if user is logged in
+  if (isset($_SESSION['username'])) {
+    $user = $_SESSION['username'];
+  }
+  echo "&lt;h3&gt;Welcome, " . $user . "&lt;/h3&gt;";
+?&gt;</code></pre>
+                        </div>
+                        <p>
+                            The client only sees the final HTML output (e.g., `
+                            &lt;h3&gt;Welcome, John&lt;/h3&gt;`).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        The logic is running, but where does the information go?
+                        We need a place to store it.
+                    </p>
+                    <a href="/backend/data.html" class="button button-primary"
+                        >Continue to Data & Databases →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'backend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

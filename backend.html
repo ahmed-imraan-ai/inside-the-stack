@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Backend</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">The Engine Room: Backend</h1>
+                    <p class="page-subtitle">
+                        The Backend is the hidden brain of the application. It
+                        handles logic, data storage, security, and
+                        communication, making the Frontend actually work.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-intro-section">
+                <div class="container">
+                    <h2 class="section-heading">
+                        Client vs. Server: The Core Relationship
+                    </h2>
+                    <p>
+                        Every interaction on the web is a conversation between
+                        the <b>Client</b> (your browser) and the
+                        <b>Server</b> (a powerful, dedicated computer). The
+                        client sends a <b>request</b> for data or action, and
+                        the server processes it and sends back a
+                        <b>response</b>.
+                    </p>
+
+                    <h3 class="sub-heading">The Backend's Responsibilities</h3>
+                    <ul class="standard-list">
+                        <li>
+                            <b>Data Storage:</b> Managing information in
+                            databases (e.g., user accounts, product lists).
+                        </li>
+                        <li>
+                            <b>Business Logic:</b> Running the complex rules
+                            that govern the application (e.g., calculating tax,
+                            validating a password).
+                        </li>
+                        <li>
+                            <b>Security:</b> Ensuring sensitive operations and
+                            data transfers are protected.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="topic-navigation-section">
+                <div class="container">
+                    <h2 class="section-heading">Key Backend Concepts</h2>
+
+                    <div class="frontend-nav-grid">
+                        <article class="topic-card alt-card">
+                            <h3 class="card-title">1. Servers & Logic</h3>
+                            <p class="card-content">
+                                Understand what a web server is, how it hosts
+                                code, and the role of server-side languages like
+                                Node.js and PHP in processing requests.
+                            </p>
+                            <a href="/backend/servers.html" class="card-link"
+                                >Explore Server Logic →</a
+                            >
+                        </article>
+
+                        <article class="topic-card alt-card">
+                            <h3 class="card-title">2. Data & Databases</h3>
+                            <p class="card-content">
+                                Dive into the world of persistent storage. Learn
+                                the difference between relational (SQL) and
+                                non-relational (NoSQL) databases and their use
+                                cases.
+                            </p>
+                            <a href="/backend/data.html" class="card-link"
+                                >Master Data Storage →</a
+                            >
+                        </article>
+
+                        <article class="topic-card alt-card">
+                            <h3 class="card-title">3. APIs & Communication</h3>
+                            <p class="card-content">
+                                APIs (Application Programming Interfaces) are
+                                the language web components use to talk to each
+                                other. Learn about REST, HTTP methods, and data
+                                transfer.
+                            </p>
+                            <a href="/backend/apis.html" class="card-link"
+                                >Learn Communication →</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'backend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

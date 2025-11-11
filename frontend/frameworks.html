@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Modern JavaScript</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">Modern JavaScript: Beyond jQuery</h1>
+                    <p class="page-subtitle">
+                        For large, dynamic applications, developers use robust
+                        frameworks like React and Vue to manage complexity and
+                        performance using component-based architecture.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Why the Shift from jQuery?
+                        </h2>
+                        <p>
+                            jQuery is excellent for
+                            <b>imperative</b> tasks—telling the browser
+                            <b>how</b> to change the DOM step-by-step. However,
+                            as applications grow, constantly managing the DOM
+                            becomes slow and error-prone.
+                        </p>
+
+                        <h3 class="sub-heading text-center">
+                            Component-Based Architecture
+                        </h3>
+                        <p>
+                            Modern frameworks adopt a
+                            <b>declarative</b> approach. You describe
+                            <b>what</b> the UI should look like for a given
+                            state, and the framework handles the updates
+                            efficiently. This is done by breaking the UI into
+                            reusable, isolated pieces called
+                            <b>components</b> (like a button, a sidebar, or a
+                            navigation bar).
+                        </p>
+                        <p>
+                            This approach makes applications easier to scale,
+                            test, and maintain.
+                        </p>
+
+                        <h2 class="section-heading">The Virtual DOM (VDOM)</h2>
+                        <p>
+                            Frameworks like React use a <b>Virtual DOM</b>—an
+                            in-memory, lightweight copy of the actual browser
+                            DOM. When data changes, the framework first updates
+                            the VDOM. It then efficiently compares the previous
+                            VDOM state to the new state (a process called
+                            <b>"diffing"</b>). Finally, it applies
+                            <b>only</b> the necessary changes to the real
+                            browser DOM, drastically boosting performance.
+                        </p>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Popular Frameworks</h2>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>React (Meta):</b> The most popular library.
+                                Highly flexible and uses JSX (a mix of HTML and
+                                JavaScript) to define components.
+                            </li>
+                            <li>
+                                <b>Vue.js (Evan You):</b> Known for its
+                                simplicity and ease of integration. It uses
+                                standard HTML templates and is often preferred
+                                by beginners.
+                            </li>
+                            <li>
+                                <b>Angular (Google):</b> A full-fledged
+                                framework (not just a library). It enforces
+                                strong structure with concepts like TypeScript
+                                and Modules, often used in large enterprise
+                                applications.
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">When to Use What?</h2>
+                        <p>
+                            For a simple site (static pages, light interaction),
+                            <b>Vanilla JS/jQuery</b> is perfectly adequate. For
+                            a web application that needs to manage thousands of
+                            data points and complex user state (like an email
+                            client or a social network feed), a
+                            <b>modern framework</b> is essential.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        You've mastered the visible web. It's time to explore
+                        the hidden engine room!
+                    </p>
+                    <a href="/backend.html" class="button button-primary"
+                        >Start the Backend Module →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'frontend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

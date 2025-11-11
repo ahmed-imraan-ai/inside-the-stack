@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - APIs & Communication</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">
+                        APIs & Communication: The Web's Language
+                    </h1>
+                    <p class="page-subtitle">
+                        APIs are a set of rules and protocols that define how
+                        software components should communicate with each other,
+                        enabling seamless data flow across the stack.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">What is an API?</h2>
+                        <p>
+                            An <b>API</b> (Application Programming Interface) is
+                            essentially a <b>messenger</b> that takes a request
+                            from one system (like your Frontend) and sends it to
+                            another system (the Backend server) and then returns
+                            the response. It ensures that the systems can talk
+                            to each other without knowing the internal
+                            complexities of the other.
+                        </p>
+
+                        <h3 class="sub-heading text-center">
+                            The Rise of REST
+                        </h3>
+                        <p>
+                            <b>REST</b> (Representational State Transfer) is the
+                            most popular architectural style for designing web
+                            APIs. A RESTful API focuses on treating server-side
+                            objects (like user accounts or blog posts) as
+                            <b>resources</b> that can be accessed and
+                            manipulated via simple, standardized URLs.
+                        </p>
+
+                        <h2 class="section-heading">Data Format: JSON</h2>
+                        <p>
+                            <b>JSON</b> (JavaScript Object Notation) is the
+                            standard format for data transfer in web APIs. It is
+                            lightweight, text-based, and easily readable by both
+                            humans and machines. It allows the Backend to format
+                            complex database information into a structured
+                            message the Frontend can quickly understand and
+                            display.
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">Example JSON Response</h3>
+                            <pre><code>{
+  "user_id": 101,
+  "username": "stack_explorer",
+  "status": "active"
+}</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">HTTP Methods (CRUD)</h2>
+                        <p>
+                            RESTful APIs use the four primary HTTP methods to
+                            perform the core operations on data resources, often
+                            summarized as <b>CRUD</b> (Create, Read, Update,
+                            Delete):
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>GET:</b> <b>Read</b> data. Used to retrieve
+                                resources (e.g., fetch a list of blog posts).
+                            </li>
+                            <li>
+                                <b>POST:</b> <b>Create</b> data. Used to submit
+                                new data to the server (e.g., submitting a new
+                                comment).
+                            </li>
+                            <li>
+                                <b>PUT/PATCH:</b> <b>Update</b> data. Used to
+                                modify an existing resource.
+                            </li>
+                            <li>
+                                <b>DELETE:</b> <b>Delete</b> data. Used to
+                                remove a resource from the server.
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">The Communication Cycle</h2>
+                        <p>
+                            In short: The <b>Frontend</b> uses
+                            <b>JavaScript</b> (the action) to make an
+                            <b>HTTP Request</b> (the method/verb) to a
+                            <b>RESTful URL</b> (the resource), and the
+                            <b>Backend</b> returns data in <b>JSON</b> format
+                            (the response).
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        You've mastered the visible web and the hidden engine.
+                        Now, let's secure it all and put it online!
+                    </p>
+                    <a href="/devops.html" class="button button-primary"
+                        >Start the DevOps Module →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'backend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

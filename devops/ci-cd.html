@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - CI/CD & Automation</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">CI/CD & Automation: The Pipeline</h1>
+                    <p class="page-subtitle">
+                        Continuous Integration (CI) and Continuous
+                        Delivery/Deployment (CD) are the core practices that
+                        automate code testing, building, and release, making
+                        development faster and more reliable.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Continuous Integration (CI)
+                        </h2>
+                        <p class="text-center">
+                            CI is a development practice where developers merge
+                            their code changes into a central repository (like
+                            GitHub) <b>frequently</b>—often several times a day.
+                            When code is merged, an automated
+                            <b>build process</b>
+                            runs immediately.
+                        </p>
+
+                        <h3 class="sub-heading text-center">The CI Process</h3>
+                        <ul class="standard-list">
+                            <li>
+                                <b>Commit:</b> A developer pushes code changes.
+                            </li>
+                            <li>
+                                <b>Build:</b> Automated software compiles the
+                                code and runs unit tests.
+                            </li>
+                            <li>
+                                <b>Test:</b> If all tests pass, the change is
+                                merged. If tests fail, the team is alerted
+                                immediately to fix the issue ("fail fast").
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">
+                            Continuous Delivery and Deployment (CD)
+                        </h2>
+                        <p>
+                            CD extends CI by automating the release process.
+                            This ensures that every successful build can be
+                            released to users quickly and safely.
+                        </p>
+
+                        <p>
+                            <b>Continuous Delivery</b> means code is ready to be
+                            deployed at any time, often requiring a manual
+                            button push to go live.
+                            <b>Continuous Deployment</b> takes it a step
+                            further: every successful change is
+                            <b>automatically</b> released to production without
+                            human intervention.
+                        </p>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Why Automate?</h2>
+                        <p class="text-center">
+                            Automation is the cornerstone of DevOps because it:
+                        </p>
+
+                        <ul class="semantic-list text-center">
+                            <li>
+                                <b>Reduces Risk:</b> Issues are found and fixed
+                                earlier when code changes are small.
+                            </li>
+                            <li>
+                                <b>Increases Speed:</b> Code moves from the
+                                developer's machine to the user faster.
+                            </li>
+                            <li>
+                                <b>Improves Quality:</b> Standardized, automated
+                                tests prevent human error.
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">Common CI/CD Tools</h2>
+                        <p class="text-center">
+                            Specialized tools manage the automated pipeline,
+                            linking source code to testing environments and
+                            production servers:
+                        </p>
+
+                        <ul class="semantic-list text-center">
+                            <li>
+                                <b>GitHub Actions</b> /
+                                <b>GitLab CI:</b> Built-in tools for running
+                                pipelines directly from the code repository.
+                            </li>
+                            <li>
+                                <b>Jenkins:</b> An open-source, powerful
+                                automation server used for complex, custom
+                                pipelines.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section text-center">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        Automation is powerful, but how do we ensure the
+                        environment is always consistent?
+                    </p>
+                    <a
+                        href="/devops/containers.html"
+                        class="button button-primary"
+                        >Continue to Containers & VMs →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'devops';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

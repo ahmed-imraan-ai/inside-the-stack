@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - JavaScript & Behavior</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">
+                        JavaScript & Behavior: The Action
+                    </h1>
+                    <p class="page-subtitle">
+                        JavaScript is the programming language of the web. It
+                        allows us to add logic, handle user input, and
+                        manipulate the elements on the page.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">The Role of JavaScript</h2>
+                        <p>
+                            While HTML provides the <b>structure</b> and CSS
+                            provides the <b>style</b>, JavaScript provides the
+                            <b>behavior</b>. It runs on the user's device
+                            (client-side) and is essential for dynamic actions
+                            like: showing validation errors, toggling menus,
+                            updating content without a reload, and fetching data
+                            from the backend via APIs.
+                        </p>
+
+                        <h2 class="section-heading">DOM Manipulation</h2>
+                        <p>
+                            The core task of client-side JavaScript is
+                            <b>DOM Manipulation</b>—changing the Document Object
+                            Model (the HTML structure) in response to events.
+                            Every time you click a button or type into a form,
+                            JavaScript listens for that <b>event</b> and runs
+                            code to update the page.
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">
+                                Simple DOM Interaction (Vanilla JS)
+                            </h3>
+                            <pre><code>// Get the element
+const myButton = document.getElementById('myBtn');
+
+// Add a listener for the 'click' event
+myButton.addEventListener('click', () => {
+  // Change the element's style (behavior)
+  myButton.classList.toggle('active');
+});</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">Leveraging jQuery</h2>
+                        <p>
+                            While modern browsers support robust "Vanilla"
+                            (plain) JavaScript, older codebases and many
+                            projects use <b>jQuery</b> to simplify complex DOM
+                            tasks, smooth out animation handling, and ensure
+                            cross-browser consistency.
+                        </p>
+
+                        <p>
+                            jQuery uses a compact syntax, making common tasks
+                            faster to write and read:
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">
+                                jQuery Syntax vs. Vanilla JS
+                            </h3>
+                            <pre><code>// Vanilla JS:
+document.getElementById('id').classList.add('active');
+
+// jQuery:
+$('#id').addClass('active');</code></pre>
+                        </div>
+
+                        <p>
+                            We used jQuery on this site to manage the
+                            <b>animated mobile menu</b> and the
+                            <b>smooth scroll-to-top button</b>, which simplifies
+                            those interactions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        You've mastered basic interactivity. Ready to see how
+                        the pros build massive, data-driven applications?
+                    </p>
+                    <a
+                        href="/frontend/frameworks.html"
+                        class="button button-primary"
+                        >Proceed to Modern JavaScript →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'frontend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

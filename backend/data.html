@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/footer.css" />
+        <title>Inside The Stack - Data & Databases</title>
+    </head>
+    <body>
+        <main>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">
+                        Data & Databases: Storage and Retrieval
+                    </h1>
+                    <p class="page-subtitle">
+                        A database is the organized collection of data that
+                        gives an application its memory. It allows the backend
+                        to store, retrieve, and manage all persistent
+                        information.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <div class="container content-grid">
+                    <div class="text-content">
+                        <h2 class="section-heading">
+                            Why Do We Need Databases?
+                        </h2>
+                        <p>
+                            The server's business logic needs a place to store
+                            information that must persist beyond a single user
+                            session. Databases manage this
+                            <b>persistent storage</b>, handling everything from
+                            user accounts and preferences to massive product
+                            catalogs and financial transactions.
+                        </p>
+
+                        <h3 class="sub-heading">The Data Schema</h3>
+                        <p>
+                            A <b>schema</b> is the blueprint of a database—it
+                            defines the structure, organization, and
+                            relationships between tables or collections of data.
+                            A good schema ensures data integrity and efficient
+                            retrieval.
+                        </p>
+
+                        <h2 class="section-heading">
+                            SQL: Structured Query Language
+                        </h2>
+                        <p>
+                            SQL is the universal language used to communicate
+                            with <b>Relational Databases</b> (RDBMS), such as
+                            SQL Server, MySQL, PostgreSQL, and SQLite. These
+                            databases are based on tables with predefined
+                            columns and strict relationships (like linking a
+                            customer to an order).
+                        </p>
+
+                        <div class="code-example-block">
+                            <h3 class="sub-heading">Example SQL Query</h3>
+                            <pre><code>SELECT username, email
+ FROM Users
+ WHERE active = TRUE;</code></pre>
+                            <p>
+                                SQL is ideal when your data needs to be
+                                <b>consistent</b> and highly
+                                <b>structured</b> (e.g., banking, e-commerce
+                                orders).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="aside-content">
+                        <h2 class="section-heading">NoSQL: Not Only SQL</h2>
+                        <p>
+                            <b>NoSQL</b> databases are designed for flexibility
+                            and scale, often handling massive amounts of
+                            unstructured data. They do not rely on rigid schemas
+                            or traditional tables.
+                        </p>
+
+                        <ul class="semantic-list">
+                            <li>
+                                <b>Document (e.g., MongoDB):</b> Stores data in
+                                flexible, JSON-like documents. Ideal for rapid
+                                development and data that changes frequently.
+                            </li>
+                            <li>
+                                <b>Key-Value (e.g., Redis):</b> Stores simple
+                                key-value pairs. Used primarily for caching and
+                                fast lookup.
+                            </li>
+                            <li>
+                                <b>Graph:</b> Used to map complex relationships
+                                between data points (e.g., social networks).
+                            </li>
+                        </ul>
+
+                        <h2 class="section-heading">Choosing a Database</h2>
+                        <p class="text-center">
+                            The choice depends on the application's needs:
+                        </p>
+                        <ul class="standard-list">
+                            <li>
+                                <b>SQL (Relational):</b> Best for applications
+                                where data <b>relationships are fixed</b> and
+                                <b>integrity is paramount</b>.
+                            </li>
+                            <li>
+                                <b>NoSQL (Non-Relational):</b> Best for
+                                applications that need <b>high scalability</b>,
+                                <b>flexibility</b>, and handle
+                                <b>unstructured data</b> (e.g., logging, content
+                                management).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <p class="next-step-text">
+                        The server has logic and storage. Now, how does the
+                        Frontend talk to it all?
+                    </p>
+                    <a href="/backend/apis.html" class="button button-primary"
+                        >Continue to APIs & Communication →</a
+                    >
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'backend';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/var.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="css/header.css" />
+        <link rel="stylesheet" href="css/homepage.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <title>Inside The Stack</title>
+    </head>
+    <body>
+        <main>
+            <section class="hero-section">
+                <div class="container hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Understand How the Web <br />
+                            Really Works
+                        </h1>
+                        <p class="hero-subtext">
+                            Learn the building blocks of modern web applications
+                            — from frontend to DevOps.
+                        </p>
+
+                        <a
+                            href="/frontend.html"
+                            class="button button-primary button-to-white"
+                        >
+                            Get Started
+                        </a>
+                    </div>
+
+                    <div class="hero-image">
+                        <img
+                            src="/assets/images/undraw_programming.svg"
+                            alt="Developer working at a computer illustrating web concepts."
+                            class="illustration-img"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="stack-intro-section">
+                <div class="container stack-intro-content">
+                    <div class="stack-intro-text">
+                        <h2 class="section-heading">
+                            Decoding the Stack: What's Inside?
+                        </h2>
+                        <p class="section-subheading">
+                            Inside the stack's logo visually represents the
+                            three fundamental layers of any modern web
+                            application, all contained within the structure of
+                            code.
+                        </p>
+
+                        <ul class="layer-list">
+                            <li class="layer-item">
+                                <span
+                                    class="layer-color-block blue-block"
+                                ></span>
+                                <h3 class="layer-title">Presentation Layer</h3>
+                                <p>
+                                    The <b>Blue</b> layer. This is everything a
+                                    user sees and interacts with—the HTML, CSS,
+                                    and JavaScript rendered by the browser.
+                                </p>
+                            </li>
+                            <li class="layer-item">
+                                <span
+                                    class="layer-color-block green-block"
+                                ></span>
+                                <h3 class="layer-title">Business Logic</h3>
+                                <p>
+                                    The <b>Green</b> layer. This is the
+                                    server-side code that handles requests,
+                                    processes information, and determines
+                                    <b>what</b>
+                                    happens when you click a button.
+                                </p>
+                            </li>
+                            <li class="layer-item">
+                                <span
+                                    class="layer-color-block yellow-block"
+                                ></span>
+                                <h3 class="layer-title">Data Layer</h3>
+                                <p>
+                                    The <b>Yellow</b> layer. This is where all
+                                    the persistent information is stored,
+                                    accessed, and managed—the foundational data
+                                    that the application relies on.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="stack-intro-visual">
+                        <img
+                            src="/assets/images/logo_layers_diagram.svg"
+                            alt="Diagram showing three stacked layers within curly braces."
+                            class="illustration-img"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section class="summary-section">
+                <div class="container">
+                    <h2 class="section-heading">Explore the Stack</h2>
+                    <p class="section-subheading">
+                        Dive into the technology that powers every application
+                        you use daily.
+                    </p>
+
+                    <div class="summary-grid">
+                        <article class="topic-card">
+                            <h3 class="card-title">Frontend (UI/UX)</h3>
+                            <p class="card-content">
+                                This is the visible part of the web application.
+                                It covers HTML structure, CSS styling, and
+                                JavaScript interactivity. Learn how browsers
+                                interpret code to create beautiful, responsive
+                                interfaces.
+                            </p>
+                            <a href="frontend.html" class="card-link"
+                                >Start Frontend Basics →</a
+                            >
+                        </article>
+
+                        <article class="topic-card">
+                            <h3 class="card-title">Backend (Logic & Data)</h3>
+                            <p class="card-content">
+                                The engine room of the web. Explore how servers
+                                process requests, manage databases, and
+                                communicate through APIs to deliver the content
+                                users see. We cover the core logic and
+                                architecture.
+                            </p>
+                            <a href="backend.html" class="card-link"
+                                >Understand Backend →</a
+                            >
+                        </article>
+
+                        <article class="topic-card">
+                            <h3 class="card-title">DevOps (Deployment)</h3>
+                            <p class="card-content">
+                                The practices that connect development and
+                                operations. Learn about continuous integration,
+                                deployment pipelines, cloud hosting, and
+                                containerization that get code reliably from
+                                your machine to the user.
+                            </p>
+                            <a href="devops.html" class="card-link"
+                                >Discover Deployment →</a
+                            >
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="quick-win-section">
+                <div class="container quick-win-content">
+                    <div class="quick-win-text">
+                        <h2 class="section-heading">
+                            How Does a Web App Talk to Itself?
+                        </h2>
+                        <p class="section-subheading">
+                            Every click, request, and data load involves a
+                            conversation between the <b>Client</b> (your browser
+                            or app) and the <b>Server</b>. This is the
+                            fundamental cycle of the web.
+                        </p>
+                        <ul class="key-points-list">
+                            <li>
+                                The <b>Client</b> sends a Request (e.g., loading
+                                a page).
+                            </li>
+                            <li>
+                                The <b>Server</b> processes the request (runs
+                                logic, checks data).
+                            </li>
+                            <li>
+                                The <b>Server</b> sends a Response (the
+                                HTML/Data/Images).
+                            </li>
+                            <li>The <b>Client</b> displays the result.</li>
+                        </ul>
+                        <a href="/backend.html" class="button button-primary"
+                            >Explore the Backend Cycle</a
+                        >
+                    </div>
+
+                    <div class="quick-win-image">
+                        <img
+                            src="/assets/images/undraw_server.svg"
+                            alt="Diagram illustrating the client-server interaction cycle."
+                            class="illustration-img"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-banner-section">
+                <div class="container cta-content">
+                    <h2 class="cta-title">Ready to Go from User to Expert?</h2>
+                    <p class="cta-subtext">
+                        Stop guessing how the tech works. The stack awaits.
+                    </p>
+                    <a
+                        href="/frontend.html"
+                        class="button button-primary button-to-white"
+                    >
+                        Dive In Now
+                    </a>
+                </div>
+            </section>
+        </main>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            const PAGE = 'home';
+        </script>
+        <script src="/js/main.js"></script>
+        <script src="/js/componentLoader.js" defer></script>
+    </body>
+</html>
