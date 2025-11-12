@@ -15,10 +15,134 @@
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/footer.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Inside the Stack" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta
+            name="description"
+            content="Curated list of high-quality web development resources, including MDN, FreeCodeCamp, W3Schools, and Stack Overflow."
+        />
+        <noscript>
+            <style>
+                #loaderWrapper {
+                    display: none !important;
+                }
+            </style>
+        </noscript>
         <title>Inside The Stack - Resources</title>
     </head>
     <body>
-        <main></main>
+        <main>
+            <div class="loader-wrapper" id="loaderWrapper">
+                <div class="loader-content">
+                    <div class="loader-logo-container">
+                        <img
+                            src="/assets/logo-white.svg"
+                            alt="Inside the Stack Logo"
+                        />
+                    </div>
+                    <div class="loader-text">Loading the Stack...</div>
+                </div>
+            </div>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">Resources: Keep Learning</h1>
+                    <p class="page-subtitle">
+                        The web development landscape changes daily. Here is a
+                        curated list of trusted, high-quality resources for
+                        documentation, tutorials, and community support.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section resource-padding">
+                <div class="container resources-grid">
+                    <div class="resource-card">
+                        <div class="card-body">
+                            <h3 class="card-title doc-color">MDN Web Docs</h3>
+                            <p class="card-content">
+                                The single most authoritative and comprehensive
+                                source for HTML, CSS, and JavaScript
+                                documentation. Essential for looking up syntax
+                                and understanding standards.
+                            </p>
+                        </div>
+                        <a
+                            href="https://developer.mozilla.org/en-US/"
+                            target="_blank"
+                            class="button resource-button doc-button"
+                            >Visit MDN</a
+                        >
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-body">
+                            <h3 class="card-title learn-color">FreeCodeCamp</h3>
+                            <p class="card-content">
+                                A non-profit organization offering thousands of
+                                hours of free, interactive, project-based
+                                learning to earn certifications in web
+                                development.
+                            </p>
+                        </div>
+                        <a
+                            href="https://www.freecodecamp.org/"
+                            target="_blank"
+                            class="button resource-button learn-button"
+                            >Start Free Courses</a
+                        >
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-body">
+                            <h3 class="card-title ref-color">W3Schools</h3>
+                            <p class="card-content">
+                                A popular reference site offering easy-to-read
+                                tutorials and simple code playgrounds (Tryit
+                                Editor) for quick testing of code snippets.
+                            </p>
+                        </div>
+                        <a
+                            href="https://www.w3schools.com/"
+                            target="_blank"
+                            class="button resource-button ref-button"
+                            >Check Reference</a
+                        >
+                    </div>
+
+                    <div class="resource-card">
+                        <div class="card-body">
+                            <h3 class="card-title community-color">
+                                Stack Overflow
+                            </h3>
+                            <p class="card-content">
+                                The primary community-driven Q&A site for
+                                developers. If you have a coding question,
+                                chances are it has already been answered here.
+                            </p>
+                        </div>
+                        <a
+                            href="https://stackoverflow.com/"
+                            target="_blank"
+                            class="button resource-button community-button"
+                            >Ask a Question</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="

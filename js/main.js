@@ -36,10 +36,22 @@ function initFooter() {
         return false;
     });
 }
-
+function hideLoader() {
+    const $loader = $('#loaderWrapper');
+    if ($loader.length) {
+        $loader.css('opacity', 0);
+        setTimeout(function () {
+            $loader.remove();
+            $('body').css('overflow', 'visible');
+        }, 500);
+    }
+}
 $(document).on('componentLoaded', function (event, data) {
     if (data.component === '/components/header.html') {
         initHeader();
+        setTimeout(() => {
+            hideLoader();
+        }, 300);
     }
     if (data.component === '/components/footer.html') {
         initFooter();

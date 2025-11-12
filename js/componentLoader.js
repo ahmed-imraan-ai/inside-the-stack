@@ -42,6 +42,6 @@ $(document).ready(function () {
             });
     }
 
-    loadComponent('/components/header.html', 'body', 'prepend');
-    loadComponent('/components/footer.html', 'body', 'append');
+    loadComponent('/components/header.html', 'main', 'prepend');
+    loadComponent('/components/footer.html', 'main', 'append');
 });

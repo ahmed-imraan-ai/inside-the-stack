@@ -15,10 +15,47 @@
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/footer.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Inside the Stack" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta
+            name="description"
+            content="The journey from code to user. Learn about deployment, different types of hosting (VPS, Cloud), and the path to production."
+        />
+        <noscript>
+            <style>
+                #loaderWrapper {
+                    display: none !important;
+                }
+            </style>
+        </noscript>
         <title>Inside The Stack - DevOps</title>
     </head>
     <body>
         <main>
+            <div class="loader-wrapper" id="loaderWrapper">
+                <div class="loader-content">
+                    <div class="loader-logo-container">
+                        <img
+                            src="/assets/logo-white.svg"
+                            alt="Inside the Stack Logo"
+                        />
+                    </div>
+                    <div class="loader-text">Loading the Stack...</div>
+                </div>
+            </div>
             <section class="page-hero-section">
                 <div class="container">
                     <h1 class="page-title">DevOps & Hosting: Go Live!</h1>
@@ -95,9 +132,7 @@
                         </article>
 
                         <article class="topic-card alt-card">
-                            <h3 class="card-title">
-                                2. Tools: Containers & VMs
-                            </h3>
+                            <h3 class="card-title">2. Containers & VMs</h3>
                             <p class="card-content">
                                 Discover the power of **containerization**
                                 (Docker) and how virtual machines (VMs) ensure
