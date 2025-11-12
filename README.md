@@ -1,4 +1,6 @@
-# 🚀 Inside the Stack: Understanding How Modern Web Apps Work
+# [🚀 Inside the Stack: Understanding How Modern Web Apps Work](https://inside-the-stack.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1611b66b-e8c0-43bb-806b-6f5b049253aa/deploy-status)](https://app.netlify.com/projects/inside-the-stack/deploys)
 
 ## Project Overview
 
@@ -35,7 +37,7 @@
 
 The codebase is organized into modular files for easy maintenance:
 
-```
+```bash
 inside-the-stack/
 ├── components/ # Reusable HTML for header and footer
 │ ├── header.html
@@ -55,7 +57,9 @@ inside-the-stack/
 ├── devops.html # DevOps Overview pages
 ├── devops/*.html # DevOps module pages
 ├── security.html # Security Overview page
-└── security/*.html # Security module pages
+├── security/*.html # Security module pages
+├── contact.html # Contact pages
+└── 404.html # Not found pages
 ```
 
 ---
@@ -96,3 +100,9 @@ inside-the-stack/
 -   Affinity (Logo design)
 -   MDN Web Docs (Reference)
 -   jQuery Library (v3.7.1)
+-   Prettier (Code Formatting)
+-   [Tech Icons](https://techicons.dev/) (Icons for tools)
+-   [RealFaviconGenerator](https://realfavicongenerator.net/) (Generating favicon from logo)
+-   Netlify (Deployment)
+
+---

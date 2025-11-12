@@ -15,10 +15,307 @@
         <link rel="stylesheet" href="/css/main.css" />
         <link rel="stylesheet" href="/css/header.css" />
         <link rel="stylesheet" href="/css/footer.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/favicon/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="Inside the Stack" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <meta
+            name="description"
+            content="Discover the essential software and services for modern developers, including VS Code, Docker, Figma, and key languages like PHP and React."
+        />
         <title>Inside The Stack - Tools</title>
     </head>
     <body>
-        <main></main>
+        <main>
+            <div class="loader-wrapper" id="loaderWrapper">
+                <div class="loader-content">
+                    <div class="loader-logo-container">
+                        <img
+                            src="/assets/logo-white.svg"
+                            alt="Inside the Stack Logo"
+                        />
+                    </div>
+                    <div class="loader-text">Loading the Stack...</div>
+                </div>
+            </div>
+            <section class="page-hero-section">
+                <div class="container">
+                    <h1 class="page-title">Essential Developer Tools</h1>
+                    <p class="page-subtitle">
+                        A collection of the essential software, services, and
+                        languages that make up a modern web developer's toolkit.
+                    </p>
+                </div>
+            </section>
+
+            <section class="content-section tool-gallery-section">
+                <div class="container">
+                    <div class="tool-detail-view" id="toolDetailView">
+                        <div class="detail-icon" id="detailIcon">
+                            <img
+                                src="/assets/images/vscode.svg"
+                                alt="VS Code icon"
+                            />
+                        </div>
+                        <div class="detail-info">
+                            <h2 class="detail-title" id="detailTitle">
+                                Visual Studio Code (VS Code)
+                            </h2>
+                            <p
+                                class="detail-description"
+                                id="detailDescription"
+                            >
+                                The undisputed text editor for modern web
+                                development. It's fast, feature-rich, and
+                                includes built-in support for Git and extensive
+                                extensions.
+                            </p>
+                            <a
+                                href="https://code.visualstudio.com/"
+                                target="_blank"
+                                class="button button-primary detail-link"
+                                id="detailLink"
+                                >Visit Website →</a
+                            >
+                        </div>
+                    </div>
+
+                    <h2 class="section-heading">The Toolkit</h2>
+                    <div class="tool-grid" id="toolGrid">
+                        <div
+                            class="tool-item active"
+                            data-tool-id="vscode"
+                            data-title="Visual Studio Code (VS Code)"
+                            data-desc="The undisputed text editor for modern web development. It's fast, feature-rich, and includes built-in support for Git and extensive extensions."
+                            data-link="https://code.visualstudio.com/"
+                            data-icon="/assets/images/vscode.svg"
+                        >
+                            <img
+                                src="/assets/images/vscode.svg"
+                                alt="VS Code icon"
+                            />
+                            <p>VS Code</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="git"
+                            data-title="Git"
+                            data-desc="The industry standard distributed version control system for tracking changes in source code during software development."
+                            data-link="https://git-scm.com/"
+                            data-icon="/assets/images/git.svg"
+                        >
+                            <img src="/assets/images/git.svg" alt="Git icon" />
+                            <p>Git</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="devtools"
+                            data-title="Chrome DevTools"
+                            data-desc="A set of web developer tools built directly into the Google Chrome browser for debugging JavaScript, editing CSS, and analyzing network performance."
+                            data-link="https://developer.chrome.com/docs/devtools/"
+                            data-icon="/assets/images/chrome.svg"
+                        >
+                            <img
+                                src="/assets/images/chrome.svg"
+                                alt="Chrome icon"
+                            />
+                            <p>DevTools</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="docker"
+                            data-title="Docker"
+                            data-desc="A containerization platform used in DevOps to package applications into light-weight, portable containers that run consistently everywhere."
+                            data-link="https://www.docker.com/"
+                            data-icon="/assets/images/docker.svg"
+                        >
+                            <img
+                                src="/assets/images/docker.svg"
+                                alt="Docker icon"
+                            />
+                            <p>Docker</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="figma"
+                            data-title="Figma (UI/UX)"
+                            data-desc="The leading collaborative web-based tool for designing user interfaces, prototyping, and creating your site's visual blueprints."
+                            data-link="https://www.figma.com/"
+                            data-icon="/assets/images/figma.svg"
+                        >
+                            <img
+                                src="/assets/images/figma.svg"
+                                alt="Figma icon"
+                            />
+                            <p>Figma</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="affinity"
+                            data-title="Affinity Studio"
+                            data-desc="A powerful, professional suite of creative software (Vector, Pixel, Layout) now offered for free by Canva. It provides all the necessary vector and photo editing tools for design projects without a subscription."
+                            data-link="https://www.affinity.studio/"
+                            data-icon="/assets/images/affinity.jpg"
+                        >
+                            <img
+                                src="/assets/images/affinity.jpg"
+                                alt="Affinity icon"
+                            />
+                            <p>Affinity</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="php"
+                            data-title="PHP"
+                            data-desc="A widely-used server-side scripting language, powering major applications like WordPress. We used it as an example for running Backend Logic."
+                            data-link="https://www.php.net/"
+                            data-icon="/assets/images/PHP.svg"
+                        >
+                            <img src="/assets/images/PHP.svg" alt="PHP icon" />
+                            <p>PHP</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="nodejs"
+                            data-title="Node.js"
+                            data-desc="A powerful JavaScript runtime environment used for building fast and scalable backend applications, APIs, and microservices."
+                            data-link="https://nodejs.org/"
+                            data-icon="/assets/images/nodejs.svg"
+                        >
+                            <img
+                                src="/assets/images/nodejs.svg"
+                                alt="Node.js icon"
+                            />
+                            <p>Node.js</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="github"
+                            data-title="GitHub"
+                            data-desc="The largest platform for hosting code repositories, collaboration, and managing version control projects in the cloud."
+                            data-link="https://github.com/"
+                            data-icon="/assets/images/github.svg"
+                        >
+                            <img
+                                src="/assets/images/github.svg"
+                                alt="GitHub icon"
+                            />
+                            <p>GitHub</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="mysql"
+                            data-title="MySQL"
+                            data-desc="The world's most popular open-source relational database (SQL), essential for structured data storage and management in web applications."
+                            data-link="https://www.mysql.com/"
+                            data-icon="/assets/images/MySQL.svg"
+                        >
+                            <img
+                                src="/assets/images/MySQL.svg"
+                                alt="MySQL icon"
+                            />
+                            <p>MySQL</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="pgsql"
+                            data-title="PostgreSQL (PGSQL)"
+                            data-desc="A powerful, advanced open-source object-relational database (SQL) known for its reliability, feature set, and data integrity."
+                            data-link="https://www.postgresql.org/"
+                            data-icon="/assets/images/PostgresSQL.svg"
+                        >
+                            <img
+                                src="/assets/images/PostgresSQL.svg"
+                                alt="PostgreSQL icon"
+                            />
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="mongodb"
+                            data-title="MongoDB"
+                            data-desc="A leading NoSQL document database used for flexible, high-volume data storage, especially in large-scale applications."
+                            data-link="https://www.mongodb.com/"
+                            data-icon="/assets/images/mongodb.svg"
+                        >
+                            <img
+                                src="/assets/images/mongodb.svg"
+                                alt="MongoDB icon"
+                            />
+                            <p>MongoDB</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="react"
+                            data-title="React JS"
+                            data-desc="The most popular JavaScript library for building user interfaces using a component-based approach and the Virtual DOM. Used by Meta."
+                            data-link="https://react.dev/"
+                            data-icon="/assets/images/react.svg"
+                        >
+                            <img
+                                src="/assets/images/react.svg"
+                                alt="React icon"
+                            />
+                            <p>React</p>
+                        </div>
+                        <div
+                            class="tool-item"
+                            data-tool-id="vue"
+                            data-title="Vue.js"
+                            data-desc="A progressive JavaScript framework known for its approachability and excellent documentation, making it popular for both small and large-scale applications."
+                            data-link="https://vuejs.org/"
+                            data-icon="/assets/images/vuejs.svg"
+                        >
+                            <img
+                                src="/assets/images/vuejs.svg"
+                                alt="Vue.js icon"
+                            />
+                            <p>Vue.js</p>
+                        </div>
+
+                        <div
+                            class="tool-item"
+                            data-tool-id="laravel"
+                            data-title="Laravel"
+                            data-desc="The leading PHP web framework, designed to make complex backend tasks (routing, database interaction, authentication) elegant and fast."
+                            data-link="https://laravel.com/"
+                            data-icon="/assets/images/laravel.svg"
+                        >
+                            <img
+                                src="/assets/images/laravel.svg"
+                                alt="Laravel icon"
+                            />
+                            <p>Laravel</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="next-step-section">
+                <div class="container next-step-content">
+                    <a href="/resources.html" class="button button-primary"
+                        >Proceed to Resources Page →</a
+                    >
+                </div>
+            </section>
+        </main>
         <script
             src="https://code.jquery.com/jquery-3.7.1.min.js"
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
@@ -29,5 +326,6 @@
         </script>
         <script src="/js/main.js"></script>
         <script src="/js/componentLoader.js" defer></script>
+        <script src="/js/tools.js" defer></script>
     </body>
 </html>
