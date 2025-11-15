@@ -1,6 +1,6 @@
 if ($('#toolGrid').length) {
     const $grid = $('#toolGrid');
-
+    let isFirstLoad = true;
     // Function to update the detail view
     function updateToolDetail($item) {
         const title = $item.data('title');
@@ -21,12 +21,16 @@ if ($('#toolGrid').length) {
         // Update the active state on the grid items
         $grid.find('.tool-item').removeClass('active');
         $item.addClass('active');
-        $('html, body').animate(
-            {
-                scrollTop: $('#toolDetailView').offset().top - 50,
-            },
-            500,
-        );
+        if (!isFirstLoad) {
+            $('html, body').animate(
+                {
+                    scrollTop: $('#toolDetailView').offset().top - 50,
+                },
+                500,
+            );
+        } else {
+            isFirstLoad = false;
+        }
     }
 
     // Initialize with the first active item
